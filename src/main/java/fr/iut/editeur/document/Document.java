@@ -20,11 +20,21 @@ public class Document {
         this.texte += texte;
     }
 
+    /**
+     * Description de la méthode
+     * @return retourne le texte sous forme de string
+     */
     @Override
     public String toString() {
         return this.texte;
     }
 
+    /**
+     * Description de la méthode
+     * @param start debut du texte
+     * @param end fin du texte
+     * @param remplacement texte de remplacement
+     */
     public void remplacer(int start, int end, String remplacement) {
         String leftPart = texte.substring(0, start);
         String rightPart = texte.substring(end);
